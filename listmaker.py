@@ -1,8 +1,9 @@
 import os, sys, datetime, random
 
-#option to allow seed settings for backup purpose
-if (sys.argv == 2):
+#option to allow seed setting for backup purpose
+if (len(sys.argv) == 2):
 	random.seed(sys.argv[1])
+	print "i"
 #open words list
 wordlist = open("bip39.txt", "r")
 #create output file
